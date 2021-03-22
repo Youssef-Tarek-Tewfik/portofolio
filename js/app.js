@@ -56,7 +56,7 @@ function setActiveSection(sectionElements, buttons) {
 // Function to handle button clicks
 // It scrolls to the required element till its visible
 function handleClick(element) {
-    element.scrollIntoView();
+    element.scrollIntoView({behavior: "smooth"});
 }
 
 function main() {
