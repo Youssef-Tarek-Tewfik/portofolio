@@ -17,10 +17,6 @@ body {
     user-select: none;
 }
 
-.highlighted {
-    border: 0.05em solid white;
-}
-
 #sideBar {
     display: flex;
     flex-direction: column;
@@ -170,6 +166,11 @@ ul {
     margin-top: 40%;
     flex-direction: column;
     font-style: italic;
+}
+
+.activeSection {
+    /* border: 0.05em solid white; */
+    background-color: #233138;
 }
 
 .filler1 {

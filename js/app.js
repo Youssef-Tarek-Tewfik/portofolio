@@ -34,7 +34,7 @@ function isVisible(element) {
 
 // Function to be called on Scroll event
 // Loops over all Sections to check for visibility
-// Then Loops over all buttons to activate and deactivate as needed
+// Then Loops over all buttons and sections to activate and deactivate as needed
 function setActiveSection(sectionElements, buttons) {
     let i;
     for (i = 0; i < 4; ++i) {
@@ -46,9 +46,11 @@ function setActiveSection(sectionElements, buttons) {
     for (let j = 0; j < 4; ++j) {
         if (i === j) {
             buttons[i].classList.add('activeButton');
+            sectionElements[i].classList.add('activeSection');
         }
         else {
             buttons[j].classList.remove('activeButton');
+            sectionElements[j].classList.remove('activeSection');
         }
     }
 }
