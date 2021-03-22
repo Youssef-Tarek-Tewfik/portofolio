@@ -1,0 +1,186 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+    background-color: #161d21;
+    display: flex;
+    flex-direction: row;
+
+    /* To Make all texts unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.highlighted {
+    border: 0.05em solid white;
+}
+
+#sideBar {
+    display: flex;
+    flex-direction: column;
+    background-color: #36454F;
+    width: 27%;
+    height: 100%;
+    box-shadow: 1px 1px black;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.sideBarButton {
+    display: flex;
+    flex: 0 0 15%;
+    /* background-color: #4b6170; */
+    margin: 5% 22%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0.25em;
+}
+
+.activeButton {
+    background-color: #4b6170;
+}
+
+.hoveredButton {
+    background-color: #6f8ea3;
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    height: 100%;
+    color: white;
+    overflow-y: auto;
+}
+
+#topBar {
+    display: flex;
+    flex-direction: row;
+    /* background-color: dimgray; */
+    width: 100%;
+    flex: 0 0 7%;
+    justify-content: flex-end;
+}
+
+#searchImg {
+    width: 2%;
+    object-fit: contain;
+    margin-right: 1%;
+}
+
+#searchBar {
+    margin-top: 1.25%;
+    margin-right: 1%;
+    height: 35%;
+    resize: none;
+    background-color: inherit;
+    color: white;
+    padding-top: 0.5%;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#intro {
+    /* background-color: black; */
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 7%;
+}
+
+#intro > span, #intro > h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+}
+
+#intro > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6.7em;
+    margin-top: -1.5%;
+    font-weight: 600;
+    padding-left: 1%;
+}
+
+#projects {
+    display: flex;
+    flex: 0 0 25%;
+    /* background-color: black; */
+    margin-left: 3%;
+    margin-right: 7%;
+    margin-top: 15%;
+    justify-content: space-evenly;
+}
+
+.singleProject {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+#links {
+    display: flex;
+    flex: 0 0 25%;
+    /* background-color: black; */
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 22%;
+    flex-direction: column;
+}
+
+.singleLink {
+    display: flex;
+    color: white;
+    font-size: 2em;
+    font-family: monospace;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#reviews {
+    display: flex;
+    color: wheat;
+    flex: 0 0 50%;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    border: 2px dashed grey;
+    margin: 5%;
+    margin-top: 40%;
+    flex-direction: column;
+    font-style: italic;
+}
+
+.filler1 {
+    flex: 0 0 10%;
+    display: flex;
+    width: 100%;
+    background-color: blue;
+}
+.filler2 {
+    flex: 0 0 10%;
+    display: flex;
+    width: 100%;
+    background-color: red;
+}
